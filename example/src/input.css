@@ -12,21 +12,21 @@
     /* For .parallax section */
     .parallax {
         @apply relative flex justify-center items-center;
-        height: 270vh;
+        height: 130vh;
         /* Adjust as needed */
     }
 
     /* For .parallax section */
-    .parallax_mid {
+    /* .parallax_mid {
         @apply relative flex justify-center items-center;
-        height: 180vh;
-        /* Adjust as needed */
-    }
+        height: 80vh;
+        Adjust as needed
+    } */
 
     /* For .parallax section */
     .parallax_mobile {
         @apply relative flex justify-center items-center;
-        height: 90vh;
+        height: 39vh;
         /* Adjust as needed */
     }
 
