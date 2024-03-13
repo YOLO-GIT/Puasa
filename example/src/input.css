@@ -12,14 +12,21 @@
     /* For .parallax section */
     .parallax {
         @apply relative flex justify-center items-center;
-        height: 130vh;
+        height: 120vh;
         /* Adjust as needed */
     }
 
     /* For .parallax section */
     .parallax_mid {
         @apply relative flex justify-center items-center;
-        height: 50vh;
+        height: 80vh;
+        /* Adjust as needed */
+    }
+
+    /* For .parallax section */
+    .parallax_mobile {
+        @apply relative flex justify-center items-center;
+        height: 40vh;
         /* Adjust as needed */
     }
 
@@ -42,55 +49,6 @@
     /* For paragraphs inside .sec */
     .sec p {
         @apply text-lg font-normal;
-    }
-}
-
-@layer components {
-
-    /* For .parallax section */
-    .parallax_mobile {
-        @apply relative flex justify-center items-center;
-        height: 39vh;
-        /* Adjust as needed */
-    }
-
-    /* For images inside .parallax_mobile */
-    .parallax_mobile img {
-        @apply absolute top-0 left-0 w-full;
-    }
-
-    /* For .sec section */
-    .sec {
-        @apply relative bg-white py-20;
-        /* Adjust padding as needed */
-    }
-
-    /* For headings inside .sec */
-    .sec h2 {
-        @apply text-3xl font-semibold mb-4;
-    }
-
-    /* For paragraphs inside .sec */
-    .sec p {
-        @apply text-lg font-normal;
-        /* Adjust font size and color as needed */
-    }
-}
-
-@layer components {
-
-    /* For .parallax section */
-    .parallax_three {
-        @apply relative flex justify-center items-center;
-        height: 130vh;
-        /* Adjust as needed */
-    }
-
-    /* For images inside .parallax */
-    /* For images inside .parallax */
-    .parallax_three img {
-        @apply absolute top-0 left-0 w-full;
-        /* Lowering the z-index to position the image behind other content */
     }
 }
 
