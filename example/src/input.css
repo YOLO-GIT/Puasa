@@ -16,15 +16,17 @@
         /* Adjust as needed */
     }
 
+    /* For .parallax section */
+    .parallax_mid {
+        @apply relative flex justify-center items-center;
+        height: 50vh;
+        /* Adjust as needed */
+    }
+
     /* For images inside .parallax */
     .parallax img {
         @apply absolute top-0 left-0 w-full pointer-events-none;
     }
-
-    /* .parallax_mid {
-        @apply relative flex justify-center items-center;
-        height: 80vh;
-    } */
 
     /* For .sec section */
     .sec {
