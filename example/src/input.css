@@ -17,17 +17,18 @@
     }
 
     /* For .parallax section */
-    /* .parallax_mid {
+    .parallax_mid {
         @apply relative flex justify-center items-center;
-        height: 80vh;
-        Adjust as needed
-    } */
+        height: 39.9vh;
+        /* Adjust as needed */
+    }
 
     /* For .parallax section */
     .parallax_mobile {
         @apply relative flex justify-center items-center;
         height: 39vh;
-        /* Adjust as needed */
+        min-width: 320px
+            /* Adjust as needed */
     }
 
     /* For images inside .parallax */

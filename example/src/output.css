@@ -1052,6 +1052,20 @@ input:checked + .toggle-bg {
   /* Adjust as needed */
 }
 
+/* For .parallax section */
+
+/* For .parallax section */
+
+.parallax_mobile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 39vh;
+  min-width: 320px;
+  /* Adjust as needed */
+}
+
 /* For images inside .parallax */
 
 .parallax img {
@@ -1061,11 +1075,6 @@ input:checked + .toggle-bg {
   left: 0px;
   width: 100%;
 }
-
-/* .parallax_mid {
-        @apply relative flex justify-center items-center;
-        height: 80vh;
-    } */
 
 /* For .sec section */
 
@@ -1093,61 +1102,6 @@ input:checked + .toggle-bg {
   line-height: 1.75rem;
   font-weight: 400;
 }
-
-/* For .parallax section */
-
-.parallax_mobile {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 39vh;
-  /* Adjust as needed */
-}
-
-/* For images inside .parallax_mobile */
-
-.parallax_mobile img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-}
-
-/* For .sec section */
-
-.sec {
-  position: relative;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  /* Adjust padding as needed */
-}
-
-/* For headings inside .sec */
-
-.sec h2 {
-  margin-bottom: 1rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 600;
-}
-
-/* For paragraphs inside .sec */
-
-.sec p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 400;
-  /* Adjust font size and color as needed */
-}
-
-/* For .parallax section */
-
-/* For images inside .parallax */
-
-/* For images inside .parallax */
 
 /* Hide scrollbar but keep functionality */
 
@@ -1484,8 +1438,8 @@ body::-webkit-scrollbar {
   width: 16rem;
 }
 
-.w-full {
-  width: 100%;
+.w-80 {
+  width: 20rem;
 }
 
 .max-w-6xl {
@@ -2031,7 +1985,47 @@ body::-webkit-scrollbar {
     /* Adjust as needed */
   }
 
+  .sm\:parallax_mobile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39vh;
+    min-width: 320px;
+    /* Adjust as needed */
+  }
+
   .sm\:parallax img {
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:parallax_mid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39.9vh;
+    /* Adjust as needed */
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:parallax {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130vh;
+    /* Adjust as needed */
+  }
+
+  .lg\:parallax img {
     pointer-events: none;
     position: absolute;
     top: 0px;
@@ -2221,8 +2215,16 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .sm\:mt-2 {
     margin-top: 0.5rem;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:h-10 {
@@ -2253,10 +2255,6 @@ body::-webkit-scrollbar {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:opacity-0 {
-    opacity: 0;
   }
 }
 
