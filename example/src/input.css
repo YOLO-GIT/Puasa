@@ -12,24 +12,30 @@
     /* For .parallax section */
     .parallax {
         @apply relative flex justify-center items-center;
-        height: 130vh;
+        height: 90vh;
         /* Adjust as needed */
     }
 
     /* For .parallax section */
     .parallax_mid {
         @apply relative flex justify-center items-center;
-        height: 50vh;
+        height: 54vh;
         /* Adjust as needed */
     }
 
     /* For .parallax section */
     .parallax_mobile {
         @apply relative flex justify-center items-center;
-        height: 30vh;
+        height: 31vh;
         /* min-width: 320px */
         /* Adjust as needed */
     }
+
+    /* .parallax_third {
+        @apply relative flex justify-center items-center;
+        height: 60vh;
+        Adjust as needed
+    } */
 
     /* For images inside .parallax */
     .parallax img {
@@ -43,6 +49,10 @@
 
     /* For images inside .parallax */
     .parallax_mobile img {
+        @apply absolute top-0 left-0 w-full pointer-events-none;
+    }
+
+    .parallax_third img {
         @apply absolute top-0 left-0 w-full pointer-events-none;
     }
 
