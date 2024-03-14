@@ -1061,14 +1061,26 @@ input:checked + .toggle-bg {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 39vh;
-  min-width: 320px;
+  height: 30vh;
+  /* min-width: 320px */
   /* Adjust as needed */
 }
 
 /* For images inside .parallax */
 
 .parallax img {
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+/* For images inside .parallax */
+
+/* For images inside .parallax */
+
+.parallax_mobile img {
   pointer-events: none;
   position: absolute;
   top: 0px;
@@ -1975,43 +1987,22 @@ body::-webkit-scrollbar {
 
 /* Add Tailwind utility classes alongside your existing HTML structure */
 
-@media (min-width: 640px) {
-  .sm\:parallax {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 130vh;
-    /* Adjust as needed */
-  }
-
-  .sm\:parallax_mobile {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 39vh;
-    min-width: 320px;
-    /* Adjust as needed */
-  }
-
-  .sm\:parallax img {
-    pointer-events: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:parallax_mid {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 39.9vh;
+    height: 50vh;
     /* Adjust as needed */
+  }
+
+  .md\:parallax_mid img {
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
   }
 }
 

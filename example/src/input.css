@@ -19,20 +19,30 @@
     /* For .parallax section */
     .parallax_mid {
         @apply relative flex justify-center items-center;
-        height: 39.9vh;
+        height: 50vh;
         /* Adjust as needed */
     }
 
     /* For .parallax section */
     .parallax_mobile {
         @apply relative flex justify-center items-center;
-        height: 39vh;
-        min-width: 320px
-            /* Adjust as needed */
+        height: 30vh;
+        /* min-width: 320px */
+        /* Adjust as needed */
     }
 
     /* For images inside .parallax */
     .parallax img {
+        @apply absolute top-0 left-0 w-full pointer-events-none;
+    }
+
+    /* For images inside .parallax */
+    .parallax_mid img {
+        @apply absolute top-0 left-0 w-full pointer-events-none;
+    }
+
+    /* For images inside .parallax */
+    .parallax_mobile img {
         @apply absolute top-0 left-0 w-full pointer-events-none;
     }
 
