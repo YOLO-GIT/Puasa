@@ -1066,12 +1066,6 @@ input:checked + .toggle-bg {
   /* Adjust as needed */
 }
 
-/* .parallax_third {
-        @apply relative flex justify-center items-center;
-        height: 60vh;
-        Adjust as needed
-    } */
-
 /* For images inside .parallax */
 
 .parallax img {
@@ -1440,6 +1434,10 @@ body::-webkit-scrollbar {
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1470,6 +1468,10 @@ body::-webkit-scrollbar {
 
 .w-full {
   width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .max-w-2xl {
@@ -2104,6 +2106,25 @@ body::-webkit-scrollbar {
   }
 }
 
+@media (min-width: 1280px) {
+  .xl\:parallax_third {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    /* Adjust as needed */
+  }
+
+  .xl\:parallax_third img {
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -2323,6 +2344,15 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width: 640px) {
+  .sm\:relative {
+    position: relative;
+  }
+
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2335,12 +2365,28 @@ body::-webkit-scrollbar {
     height: 2.5rem;
   }
 
+  .sm\:max-h-full {
+    max-height: 100%;
+  }
+
   .sm\:w-10 {
     width: 2.5rem;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:max-w-2xl {
+    max-width: 42rem;
+  }
+
   .sm\:justify-start {
     justify-content: flex-start;
+  }
+
+  .sm\:p-4 {
+    padding: 1rem;
   }
 
   .sm\:text-left {
@@ -2368,6 +2414,10 @@ body::-webkit-scrollbar {
     inset: 0px;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:p-5 {
     padding: 1.25rem;
   }
@@ -2384,6 +2434,11 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -2412,6 +2467,15 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;

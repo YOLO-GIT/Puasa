@@ -31,11 +31,11 @@
         /* Adjust as needed */
     }
 
-    /* .parallax_third {
+    .parallax_third {
         @apply relative flex justify-center items-center;
-        height: 60vh;
-        Adjust as needed
-    } */
+        height: 110vh;
+        /* Adjust as needed */
+    }
 
     /* For images inside .parallax */
     .parallax img {
