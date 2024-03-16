@@ -1474,6 +1474,14 @@ body::-webkit-scrollbar {
   width: 15rem;
 }
 
+.w-56 {
+  width: 14rem;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
