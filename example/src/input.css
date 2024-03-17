@@ -12,12 +12,6 @@
     /* For .parallax section */
     .parallax {
         @apply relative flex justify-center items-center;
-        height: 70vh;
-        /* Adjust as needed */
-    }
-
-    .parallax_first {
-        @apply relative flex justify-center items-center;
         height: 90vh;
         /* Adjust as needed */
     }
@@ -39,7 +33,7 @@
 
     .parallax_second {
         @apply relative flex justify-center items-center;
-        height: 61vh;
+        height: 110vh;
         /* Adjust as needed */
     }
 
