@@ -33,7 +33,7 @@
 
     .parallax_second {
         @apply relative flex justify-center items-center;
-        height: 110vh;
+        height: 61vh;
         /* Adjust as needed */
     }
 
