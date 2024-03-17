@@ -19,7 +19,7 @@
     /* For .parallax section */
     .parallax_mid {
         @apply relative flex justify-center items-center;
-        height: 54vh;
+        height: 45vh;
         /* Adjust as needed */
     }
 
@@ -28,6 +28,12 @@
         @apply relative flex justify-center items-center;
         height: 31vh;
         /* min-width: 320px */
+        /* Adjust as needed */
+    }
+
+    .parallax_second {
+        @apply relative flex justify-center items-center;
+        height: 110vh;
         /* Adjust as needed */
     }
 

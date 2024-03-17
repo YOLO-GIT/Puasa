@@ -1458,10 +1458,6 @@ body::-webkit-scrollbar {
   width: 1rem;
 }
 
-.w-60 {
-  width: 15rem;
-}
-
 .w-64 {
   width: 16rem;
 }
@@ -1785,11 +1781,6 @@ body::-webkit-scrollbar {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -2083,7 +2074,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 54vh;
+    height: 45vh;
     /* Adjust as needed */
   }
 
@@ -2116,7 +2107,18 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width: 1280px) {
-  .xl\:parallax_third {
+  .xl\:parallax_second {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    /* Adjust as needed */
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:parallax_third {
     position: relative;
     display: flex;
     align-items: center;
@@ -2125,7 +2127,7 @@ body::-webkit-scrollbar {
     /* Adjust as needed */
   }
 
-  .xl\:parallax_third img {
+  .\32xl\:parallax_third img {
     pointer-events: none;
     position: absolute;
     top: 0px;
@@ -2328,10 +2330,6 @@ body::-webkit-scrollbar {
     margin-bottom: 0px;
   }
 
-  .sm\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -2375,14 +2373,6 @@ body::-webkit-scrollbar {
 @media (min-width: 768px) {
   .md\:inset-0 {
     inset: 0px;
-  }
-
-  .md\:h-10 {
-    height: 2.5rem;
-  }
-
-  .md\:w-10 {
-    width: 2.5rem;
   }
 
   .md\:p-4 {
