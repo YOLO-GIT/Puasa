@@ -1,6 +1,10 @@
+<p align="center"><img src="./example/bolls/Kirbo.png"></p>
+
 # Description
 
 - Puasa ye anak-anak
+
+## <p align="center"><img src="name_template_latest.png"></p>
 
 # License
 
